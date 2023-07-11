@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="box-border m-0 p-0 text-sm sm:bg-DarkSlateGrey">
+  <div class="container ">
+
+      <div class="newletter-container max-w-sm m-auto sm:min-w-max sm:mt-10  ">
+        <div class="group  sm:bg-white sm:rounded-3xl">
+              <div class="display-flex sm:flex  sm:p-4">
+                <div class="image">
+                  <div class="nesletter-image m-auto">
+                  <img class="sm:hidden" src="./assets/images/illustration-sign-up-mobile.svg" alt="new-image">
+                  <img class="hidden sm:block w-full h-full sm:order-1" src="./assets/images/illustration-sign-up-desktop.svg" alt="good-mark">
+                  </div>
+                </div>
+                <div class="stay-updated sm:-order-1 sm:mt-10 sm:pr-20 ">
+                  <div class="title-heading p-6">
+                    <h1 class="title text-3xl font-bold text-DarkSlateGrey sm:text-5xl">Stay Updated!</h1>
+                  </div>
+                  <div class="updates p-6 text-CharcoalGrey sm:font-bold sm:p-0 sm:px-6">
+                    <p class="sm:w-96">Join 60,000+ product managers receiving monthly updates on:</p>
+                  </div>
+                  <div class="list p-6 ">
+                    <div class="list-items flex space-x-4 mt-4  items-center align-middle sm:mt-0 ">
+                      <img class="sm:mt-5" src="./assets/images/icon-list.svg" alt="good-mark">
+                      <p class="text-CharcoalGrey mt-4 sm:font-bold">Product discovering and building what matters</p>
+                    </div>
+                    <div class="list-items flex mt-4 space-x-4 sm:mt-0">
+                      <img class="sm:mt-4" src="./assets/images/icon-list.svg" alt="good-mark">
+                      <p class="text-CharcoalGrey pr-4 mt-4 sm:font-bold">Measuring to ensure updates are a success</p>
+                    </div>
+                    <div class="list-items flex space-x-4 mt-4">
+                      <img src="./assets/images/icon-list.svg" alt="good-mark">
+                       <p class="text-CharcoalGrey sm:font-bold">And much more!</p>
+                    </div>
+                  </div>
+                  <div class="form p-6 sm:px-6">
+                    <form>
+                      <label for="add email adress" class="text-DarkSlateGrey font-bold sm:block sm:mb-3">Email Address</label>
+                      <p id="message"></p>
+                      <input type="text"  class="outline-none p-4 border-2 pr-24 rounded-lg sm:w-full" id="addEmailAddress" placeholder="email@company.com">
+                    </form>
+                  </div>
+                  <div class="subscribe p-6">
+                      <button type="submit" class="p-4 w-full text-center block bg-DarkSlateGrey text-white rounded-lg sm:p-4 font-bold sm:w-full sm:hover:bg-gradient-to-r from-pink-500 to-Tomato " 
+                      id="subscribe">
+                        Subscribe to monthly newletter
+                      </button>
+                  </div>
+              </div>
+              </div>
+
+        </div>
+    
+
+      </div>
+
+  </div>
+     <!-- success message -->
+  <div class="success-container h-full p-6 hidden">
+                  <div class="succes-alert sm:bg-white sm:w-96 m-auto p-10 sm:rounded-3xl">
+                    <img class="mt-10 sm:mt-0" src="./assets/images/icon-success.svg" alt="good-mark">
+                    <h1 class="text-DarkSlateGrey font-bold text-3xl mt-6">Thanks for subscribing!</h1>
+                    <p class="text-CharcoalGrey mt-10">A confirmation email has been sent to <span class="text-DarkSlateGrey font-bold">ash@loremcompany.com.</span> Please open it and click the button inside to confirm your subscribtion</p>
+                    <button class="p-4 w-full m-auto border-2 bg-DarkSlateGrey text-center text-white block rounded-lg px-14 sm:px-0 font-bold mt-44 sm:w-full sm:mt-2 sm:hover:bg-gradient-to-r from-pink-500 to-Tomato " id="dismiss">
+                        Dismiss message
+                    </button>
+                  </div>
+
+              </div>
+  
+  <div class="attribution flex flex-col mt-4 text-center sm:flex-row space-x-4 sm:items-center justify-center sm:text-white">
+    Challenge by  <a class="sm:text-white!" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="sm:m-4 sm:text-white" href="#">NNADI EMMANUEL ONYEDIKACHI</a>.
+  </div>
+
+  <script src="myScript.js"></script>
+</body>
+</html>
