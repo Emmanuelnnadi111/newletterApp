@@ -10,10 +10,9 @@ addEmail.addEventListener('keyup', validateEmail)
 
 function validateEmail() {
     const email = document.getElementById('addEmailAddress');
-    const re = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2, 5})$/;
+    const re = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
 
     if(!re.test(email.value)) {
-        console.log(email.value)
         email.style.borderColor = 'red';
     } else {
         email.style.borderColor = 'green';
